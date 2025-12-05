@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Indinklabs — Coming Soon</title>
+  <meta name="description" content="Indinklabs — premium graphic tees. We're crafting something awesome. Sign up to be notified when we launch." />
+  <meta property="og:title" content="Indinklabs — Coming Soon" />
+  <meta property="og:description" content="Indinklabs — premium graphic tees. We're crafting something awesome. Sign up to be notified when we launch." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎽</text></svg>">
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <!-- Simple inline SVG logo so you don't need an image file yet -->
+      <div class="logo" aria-hidden="true">
+        <svg width="64" height="64" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Indinklabs logo">
+          <rect rx="14" width="100" height="100" fill="#0f1724"/>
+          <text x="50" y="60" font-family="Verdana, Arial, sans-serif" font-size="38" fill="#fff" text-anchor="middle">I</text>
+        </svg>
+      </div>
+      <h1>Indinklabs</h1>
+      <p class="tagline">Original T‑shirts • Thoughtfully designed</p>
+    </header>
+
+    <section class="countdown" aria-live="polite">
+      <p class="lead">We're launching in</p>
+      <div id="countdown">
+        <div><span id="days">00</span><small>Days</small></div>
+        <div><span id="hours">00</span><small>Hours</small></div>
+        <div><span id="minutes">00</span><small>Minutes</small></div>
+        <div><span id="seconds">00</span><small>Seconds</small></div>
+      </div>
+    </section>
+
+    <section class="signup">
+      <p>Want a launch discount or early access? Drop your email and we'll notify you.</p>
+
+      <!--
+        FORM: update the `action` attribute to your form backend.
+        1) Formspree example: action="https://formspree.io/f/your-id"
+        2) Netlify: keep action="" and add `data-netlify="true"` attribute
+        3) Or integrate with any email provider / marketing tool.
+      -->
+      <form id="signup-form" action="" method="POST" novalidate>
+        <label for="email" class="sr-only">Email address</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required />
+        <button type="submit">Notify Me</button>
+        <p id="form-msg" class="form-msg" aria-live="assertive"></p>
+      </form>
+      <p class="privacy">We respect your privacy. No spam. Unsubscribe anytime.</p>
+    </section>
+
+    <footer class="footer">
+      <p>Follow us</p>
+      <nav class="social">
+        <a href="https://www.instagram.com/indinklabs" aria-label="Instagram (placeholder)">Instagram</a>
+        <a href="https://www.instagram.com/indinklabs" aria-label="Twitter (placeholder)">Twitter</a>
+        <a href="indinklabs@gmail.com" aria-label="Email (placeholder)">Email</a>
+      </nav>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
